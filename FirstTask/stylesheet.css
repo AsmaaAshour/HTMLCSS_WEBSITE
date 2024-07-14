@@ -1,0 +1,167 @@
+:root{
+    --primary-color:cadetblue;
+    --secondary-color: white;
+    --hover-color:#e0f2f1;
+}
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+/*header*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.logo a:hover{
+    color: var(--hover-color); 
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+nav ul li
+{
+    margin-left: 20px;
+}
+nav ul li a
+{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--hover-color); 
+}
+/*footer*/
+footer
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding:10px 0;
+    width: 100%;
+}
+/*main page*/
+.intro
+{
+    display: inline-block;
+    padding: 10px;
+}
+.introimg
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.intro h2
+{
+    color: orange;
+    font-weight: lighter;
+}
+.intro p
+{
+    color: #808080d4;
+    line-height: 1.6;
+    width: 50%;
+    margin: 0;
+}
+/*about*/
+#about{
+    padding: 20px;
+}
+h1
+{
+    color:var(--primary-color) ;
+    font-size: 20px;
+}
+/*home*/
+.slider 
+{
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+.slider img
+{
+    width: 37%;
+}
+/*content*/
+#contact,.login,.register,.gallery,.mainpage
+{
+    padding: 20px;
+}
+form
+ {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+}
+form label
+{
+    font-weight: bold;
+}
+form input 
+{
+    padding: 10px;
+    margin-top: 5px;
+}
+form input[type="submit"] 
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+form input[type="submit"]:hover 
+{
+    background-color:var(--hover-color);
+}
+/*login|register*/
+button 
+{
+    padding: 10px;
+    font-size: 1em;
+    color: var(--secondary-color);
+    background-color:var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+button:hover
+{
+    background-color: var(--hover-color);
+}
+
+
+.introimg
+{
+    animation: 5s infinite animation;
+}
+@keyframes animation
+{
+    from{
+        transform: translatex(0);
+    }
+    to{
+        transform: translatex(30vw);
+    }
+}
